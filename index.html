@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram con Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ 
+  <nav class="navbar navbar-light bg-light py-3">
+    <div class="container-fluid">
+        <div class="d-flex w-100 justify-content-between">
+            <div>
+                <i class="fa-brands fa-instagram fa-xl"></i>
+                <h5 class="d-inline-block fs-5">Instagram</h5>
+            </div>
+            <div class="d-flex align-right justify-content-end">
+    
+                <button type="button" class="btn btn-success me-2" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">Create a new post</button>
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fa-solid fa-gear"></i>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Profile</a></li>
+                      <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                      <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                      <li>
+                          <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                  </ul>
+              </div>
+            </div>
+        </div>
+      </div>
+    </nav>
+    
+     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title" id="exampleModalLabel">Create a new post</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+           <form action="">
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Caption:</label>
+              <input type="text" class="form-control" placeholder="Add the caption of your post here" id="recipient-name">
+            </div>
+           </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success">Publish</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+     <div class="container-fluid p-3">
+      <ul class="nav nav-pill justify-content-center" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                  role="tab" aria-controls="home" aria-selected="true"><i
+                      class="fa-solid fa-table-cells"></i></a>
+          </li>
+          <li class="nav-item" role="presentation">
+              <a class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                  role="tab" aria-controls="profile" aria-selected="false"><i class="fa-solid fa-square"></i></a>
+          </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        
+        <div class="tab-pane fade show active overflow-hidden" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="row">
+                <div class="col-4 p-1"><img style="height: 30vw;" src="https://static.vecteezy.com/ti/fotos-gratis/p1/6026259-tranquilo-verao-ferias-ferias-paisagem-tropical-ilha-por-do-sol-praia-palms-shore-calmo-mar-areia-exotico-natureza-cenario-inspirador-e-pacifico-paisagem-marinha-reflexo-ceu-por-do-sol-foto.jpg" class="img-fluid w-100" alt=""></div>
+                <div class="col-4 p-1"><img style="height: 30vw; " src="https://blog.emania.com.br/wp-content/uploads/2016/08/Summer-wildflowers.jpg" class="img-fluid w-100" alt=""></div>
+                <div class="col-4 p-1"><img style="height: 30vw; " src="https://pixnio.com/free-images/2017/08/30/2017-08-30-07-07-47-1000x667.jpg" class="img-fluid w-100" alt=""></div>
+            </div>
+            <div class="row">
+                <div class="col-4 p-1"><img style="height: 30vw; " src="https://img.freepik.com/fotos-gratis/folhas-de-outono-vibrantes-iluminam-a-floresta-tranquila-ao-entardecer-gerada-por-ia_188544-15036.jpg?semt=ais_hybrid" class="img-fluid w-100" alt=""></div>
+                <div class="col-4 p-1"><img style="height: 30vw; " src="https://img.freepik.com/fotos-premium/paisagem-de-outono-colorida_130291-2270.jpg" class="img-fluid w-100" alt=""></div>
+                <div class="col-4 p-1"><img style="height: 30vw; " src="https://cdn.pixabay.com/photo/2014/12/08/02/59/benches-560435_640.jpg" class="img-fluid w-100" alt=""></div>
+            </div>
+            <div class="row">
+                <div class="col-4 p-1"><img style="height: 30vw; " src="https://vocenaneve.com.br/wp-content/uploads/2021/09/laponia.jpg" class="img-fluid w-100" alt=""></div>
+                <div class="col-4 p-1"><img style="height: 30vw; " src="https://blog.thenorthface.com.br/wp-content/uploads/2018/06/W6A2923-Pano-750x555.jpg" class="img-fluid w-100" alt=""></div>
+                <div class="col-4 p-1"><img style="height: 30vw; " src="https://pt.bcdn.biz/Images/2019/12/10/66798c6f-1c96-4008-b9bd-0b9d640caf6e.jpg" class="img-fluid w-100" alt=""></div>
+            </div>
+        </div>
+        
+        <div class="tab-pane fade overflow-hidden" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          <div class="row my-4">
+              <div class="col-6 mx-auto border rounded p-2">
+                  <div class="d-flex p-2">
+                      <div class="w-100 fs-4"><strong>¡Playa en Santa Catarina en el Verano!</strong></div>
+                      <small>01/09</small>
+                  </div>
+                  <img style="object-fit: cover;" src="https://static.vecteezy.com/ti/fotos-gratis/p1/6026259-tranquilo-verao-ferias-ferias-paisagem-tropical-ilha-por-do-sol-praia-palms-shore-calmo-mar-areia-exotico-natureza-cenario-inspirador-e-pacifico-paisagem-marinha-reflexo-ceu-por-do-sol-foto.jpg" class="img-fluid w-100 col-12" alt=""/>
+                  <div class="p-1">
+                      <strong>903 Likes</strong>
+                      <p>¡Una playa en Santa Catarina - Brasil, para que pases un verano en familia!</p>
+                  </div>
+              </div>
+          </div>
+          <div class="row my-4">
+              <div class="col-6 mx-auto border rounded p-2">
+                  <div class="d-flex p-2">
+                      <div class="w-100 fs-4"><strong>¡Vibrantes hojas de otoño que iluminan la calle!</strong></div>
+                      <small>03/12</small>
+                  </div>
+                  <img style="object-fit: cover;" src="https://img.freepik.com/fotos-gratis/folhas-de-outono-vibrantes-iluminam-a-floresta-tranquila-ao-entardecer-gerada-por-ia_188544-15036.jpg?semt=ais_hybrid" class="img-fluid w-100 col-12" alt=""/>
+                  <div class="p-1">
+                      <strong>71.954 Likes</strong>
+                      <p>¡Ha llegado el otoño iluminando las calles de la ciudad con su belleza natural!</p>
+                  </div>
+              </div>
+          </div>
+          <div class="row my-4">
+              <div class="col-6 mx-auto border rounded p-2">
+                  <div class="d-flex p-2">
+                      <div class="w-100 fs-4"><strong>El invierno en el hemisferio norte</strong></div>
+                      <small>07/08</small>
+                  </div>
+                  <img style="object-fit: cover;" src="https://pt.bcdn.biz/Images/2019/12/10/66798c6f-1c96-4008-b9bd-0b9d640caf6e.jpg" class="img-fluid w-100 col-12" alt=""/>
+                  <div class="p-1">
+                      <strong>98.321 Likes</strong>
+                      <p>El invierno en el hemisferio norte es una estación mágica, una época en la que la naturaleza descansa bajo un manto esponjoso de nieve que parece algodón.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+</html>
